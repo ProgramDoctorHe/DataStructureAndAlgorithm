@@ -34,23 +34,21 @@ public class LinkedListQueue {
         size++;
     }
 
-    public ListNode poll(){
-        //空队列返回null
-        if(isEmpty()){
-            return null;
-        }
-        //非空队列
-        ListNode node = head;
+    public int poll() {
+        int num = peek();
         head = head.next;
         //如果列表空,也把rear置为null
-        if(head == null){
+        if (head == null) {
             rear = null;
         }
         size--;
-        return node;
+        return num;
     }
 
-    public ListNode peek(){
-        return head;
+    public int peek() {
+        if (isEmpty()) {
+            throw new IndexOutOfBoundsException("列表为空");
+        }
+        return head.val;
     }
 }
