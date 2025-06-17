@@ -1,6 +1,6 @@
 package com.hepengke.www.stack;
 
-import com.hepengke.www.ListNode;
+import com.hepengke.www.baseelement.ListNode;
 
 public class ListStack {
     private ListNode stackPeek;

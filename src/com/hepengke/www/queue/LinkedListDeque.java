@@ -1,6 +1,6 @@
 package com.hepengke.www.queue;
 
-import com.hepengke.www.BiListNode;
+import com.hepengke.www.baseelement.BiListNode;
 
 public class LinkedListDeque {
     private BiListNode head, rear;

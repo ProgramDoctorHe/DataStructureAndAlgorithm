@@ -1,4 +1,4 @@
-package com.hepengke.www;
+package com.hepengke.www.baseelement;
 
 public class BiListNode {
     public int val;

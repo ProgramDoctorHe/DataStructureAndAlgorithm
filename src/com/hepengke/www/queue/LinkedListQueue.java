@@ -1,6 +1,6 @@
 package com.hepengke.www.queue;
 
-import com.hepengke.www.ListNode;
+import com.hepengke.www.baseelement.ListNode;
 
 public class LinkedListQueue {
     private ListNode head, rear;
