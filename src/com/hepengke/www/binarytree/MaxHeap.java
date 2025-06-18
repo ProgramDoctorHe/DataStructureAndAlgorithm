@@ -81,16 +81,16 @@ public class MaxHeap {
             int max = index;
             int left = left(index);
             int right = right(index);
-            if (left < size() - 1 && maxHeap.get(left) > maxHeap.get(max)) {
+            if (left < size() && maxHeap.get(left) > maxHeap.get(max)) {
                 max = left;
             }
-            if (right < size() - 1 && maxHeap.get(right) > maxHeap.get(max)) {
+            if (right < size() && maxHeap.get(right) > maxHeap.get(max)) {
                 max = right;
             }
-            if(max == index){
+            if (max == index) {
                 break;
             }
-            swap(max,index);
+            swap(max, index);
             index = max;
         }
     }
