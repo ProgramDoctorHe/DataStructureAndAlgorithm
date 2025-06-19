@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class GraphAdjList {
-    private Map<Vertex, List<Vertex>> adjList;
+    public Map<Vertex, List<Vertex>> adjList;
 
     public GraphAdjList(Vertex[][] edges) {
         adjList = new HashMap<>();
